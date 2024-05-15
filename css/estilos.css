@@ -1,0 +1,14 @@
+.color1 {color: #817dce;}
+.color2 {color: #d37ab7;}
+.color3 {color: #f6a9b3;}
+.color4 {color: #f8e0c1;}
+.color5 {color: #f8efd7;}
+
+.prueba {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+  }
