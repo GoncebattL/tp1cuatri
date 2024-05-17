@@ -7,15 +7,19 @@
 .container {
             background-color: #f8efd7;
             }
-.nav {display: flex;
+.nav {
+      display: flex;
       justify-content: space-evenly;
       align-items: center;
       color: #6863c9;
       background-color: #f8e0c1;
       height: 20%;
       }
+
 .link{font-size: larger;
       }
+
+.link:hover{color: #d37ab7;}
 
 * { margin-top: 0%;
     font-family: "Noto Sans", sans-serif;
@@ -26,6 +30,18 @@
       "width" 100;
     text-decoration: none;
   }
+
+  .logo {height: 80px;}
+  
+  .logo-title {height: 100px;
+               display: flex;
+               justify-content: center;
+               padding-top: 3%;
+               }
+  .logo-image {height: 100px;}
+
+  .logo-image:hover {transform: scale(1.20);}
+
  
 
 .h1 { display: flex;
@@ -45,7 +61,8 @@
             text-align: justify;
             font-size: larger;
             margin-inline-start: 15%;
-            margin-inline-end: 15%;}
+            margin-inline-end: 15%;
+            padding-top: 30px;}
 
 
 
@@ -81,13 +98,27 @@
 
 .caption {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 10px;
+    right: 10px;
+    color: #f6a9b3;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: #f8efd7;
     padding: 5px;
     border-radius: 5px;
 }
+
+.text_ph {position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #f6a9b3;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: #f8efd7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 
 .carousel-control {
     position: absolute;
@@ -102,10 +133,14 @@
 
 .carousel-control.prev {
     left: 10px;
+    border-radius: 5px;
+    background-color: #f6a9b3;
 }
 
 .carousel-control.next {
     right: 10px;
+    border-radius: 5px;
+    background-color: #f6a9b3;
 }
 
 .footer{display: flex;
