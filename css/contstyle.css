@@ -3,9 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8efd7;
   }
   
-  .container {
+  .contenedor {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -13,42 +14,19 @@ body {
   
   section {
     flex: 1;
-    margin: 0 10px;
+    margin: 0;
+    background-color: #f8efd7;
   }
   
+  h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 4em;
+    color:#817dce;
+    text-align: center;
+  }
+
   h2 {
     margin-bottom: 10px;
-  }
-  
-  /* Estilos del formulario */
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
   }
   
   /* Estilos del banner e imagen */
@@ -96,16 +74,20 @@ body {
   .person {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+    text-align: center;
   }
+
   
-  .profile-pic {
-    width: 100%;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-  }
-  
+.profile-pic {
+  width: 60%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
   .profile-pic:hover {
     transform: scale(1.05);
   }
@@ -154,6 +136,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    background-color: #f8efd7;
   }
   
   .contact-card .card {
