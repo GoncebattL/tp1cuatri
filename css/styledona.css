@@ -72,3 +72,12 @@ color: black;
   text-decoration: none;
   color: black;
 }
+
+.lista{
+  text-decoration: underline;
+  color: #817dce;
+}
+
+.otros{
+ font-weight: bold;
+}
