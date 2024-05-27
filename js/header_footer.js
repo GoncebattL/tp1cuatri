@@ -3,17 +3,25 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(data => {
             const header = document.createElement('div');
-            header.className="header";
+            header.className = "header";
             header.innerHTML = data;
             document.body.insertAdjacentElement('afterbegin', header);
+            
+            const navbarToggle = document.getElementById('navbarToggle');
+            const navbarMenu = document.getElementById('navbarMenu');
+        
+            navbarToggle.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
+            });
         })
 
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
             const footer = document.createElement('div');
-            footer.className="footer";
+            footer.className = "footer";
             footer.innerHTML = data;
             document.body.insertAdjacentElement('beforeend', footer);
         })
+
 });

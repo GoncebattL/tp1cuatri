@@ -21,7 +21,7 @@ body {
 }
 
 .card {
-    position: relative; 
+    position: relative;
     background: #f1ede1;
     border: 2px solid #817dce;
     border-radius: 15px;
@@ -39,7 +39,7 @@ body {
 }
 
 .card-image {
-    width: 80%; 
+    width: 80%;
 }
 
 .card-image img {
@@ -53,7 +53,7 @@ body {
 .card-content {
     padding: 15px;
     text-align: left;
-    width:70%;
+    width: 70%;
 }
 
 .card-content img {
@@ -78,7 +78,7 @@ body {
 
 .patita {
     position: absolute;
-    bottom: 10px; 
+    bottom: 10px;
     right: 15px;
     width: 20px;
     height: auto;
@@ -88,9 +88,9 @@ body {
 }
 
 #title {
-    color:#817dce;
-    margin-left: 170px; 
-    margin-bottom: 0px; 
+    color: #817dce;
+    margin-left: 10%;
+    margin-bottom: 0px;
     margin-top: 60px;
 }
 
@@ -101,12 +101,13 @@ body {
 }
 
 .banner-container {
-    position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 .banner {
+    z-index: 1;
+    position: relative;
     width: 100%;
     max-height: 400px;
     display: block;
@@ -114,10 +115,37 @@ body {
 }
 
 .hearts {
+    z-index: 2;
     position: absolute;
-    top: 0;
-    left: 70em;
-    width: 300px; 
+    top: 10%;
+    left: 60%;
+    width: 300px;
     height: auto;
     transform: rotate(25deg);
+}
+
+@media screen and (max-width: 768px) {
+
+    .hearts {
+        width: 30%;
+    }
+
+    #title h1 {
+        font-size: 40px;
+    }
+
+    #cards {
+        padding: 20px;
+    }
+
+    .card {
+        margin: 0px;
+        height: 320px;
+    }
+
+    .card-content {
+        padding: 5px;
+        text-align: left;
+        width: 50%;
+    }
 }
